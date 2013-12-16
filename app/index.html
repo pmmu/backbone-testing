@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>User Stories</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap-responsive.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<div id="nav" class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="#">User Stories</a>
+
+        <!-- Nav's for single userstory view -->
+        <ul id="userstory-nav" class="nav region region-userstory" style="display: none;">
+            <li class="userstory-view active">
+                <a href="#">
+                    <i class="icon-file"></i>
+                    <span class="hidden-phone-portrait">View</span>
+                </a>
+            </li>
+            <li class="userstory-edit">
+                <a href="#">
+                    <i class="icon-pencil"></i>
+                    <span class="hidden-phone-portrait">Edit</span>
+                </a>
+            </li>
+            <li class="userstory-delete">
+                <a href="#">
+                    <i class="icon-trash"></i>
+                    <span class="hidden-phone-portrait">Delete</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Nav's for userstories view -->
+        <form class="navbar-search pull-right region region-userstories" style="display: none;">
+            <input type="text" class="search-query" placeholder="Filter">
+        </form>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container-fluid">
+    <!-- Content: User Stories -->
+    <div id="userstories" class="region region-userstories" style="display: none;">
+        <table id="userstories-list" class="table table-bordered table-hover">
+            <tbody>
+            <tr class="userstories-new">
+                <td class="userstory-name">
+                    <input id="userstory-new-input"
+                           placeholder="Write a new user story." autofocus>
+                </td>
+                <td class="userstory-action">
+                    <div id="userstory-create" class="btn pull-right">
+                        <i class="icon-plus"></i>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Content: Single User Story -->
+    <div id="userstory" class="region region-userstory" style="display: none;"></div>
+</div>
+
+<!-- JavaScript Core Libraries -->
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/json2.js"></script>
+<script src="js/lib/backbone.js"></script>
+<script src="js/lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/lib/showdown/showdown.js"></script>
+
+<!-- JavaScript Application Libraries -->
+<script src="js/app/namespace.js"></script>
+<script src="js/app/models/userstory.js"></script>
+<script src="js/app/collections/userstories.js"></script>
+<script src="js/app/templates/templates.js"></script>
+<script src="js/app/views/userstory-nav.js"></script>
+<script src="js/app/views/userstory-view.js"></script>
+<script src="js/app/views/userstory.js"></script>
+<script src="js/app/views/userstories-item.js"></script>
+<script src="js/app/views/userstories-filter.js"></script>
+<script src="js/app/views/userstories.js"></script>
+<script src="js/app/routers/router.js"></script>
+
+<!-- Bootstrap and start application. -->
+<script src="js/app/app.js"></script>
+</body>
+</html>

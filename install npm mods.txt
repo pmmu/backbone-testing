@@ -1,0 +1,16 @@
+npm install express --save && 
+npm install mongoose --save && 
+npm install mocha-phantomjs --save-dev && 
+npm install nodemon --save-dev && 
+npm install markdown --save-dev && 
+npm install http-server --save-dev && 
+npm install bower --save-dev && 
+npm install phantomjs --save-dev && 
+npm install grunt --save-dev && 
+npm install grunt-cli --save-dev && 
+npm install grunt-contrib-jshint --save-dev && 
+npm install grunt-contrib-jade --save-dev && 
+npm install grunt-mocha-phantomjs --save-dev && 
+npm install grunt-contrib-watch --save-dev && 
+npm install grunt-contrib-copy --save-dev && 
+npm install grunt-contrib-uglify

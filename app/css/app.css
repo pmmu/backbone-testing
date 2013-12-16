@@ -1,0 +1,59 @@
+/* Nav bar */
+#userstory-nav a i {
+  opacity: 0.65;
+}
+
+/* (Sort-of) iPhone Portrait (usually 320px). */
+@media (max-width: 390px) {
+  .navbar-search .search-query {
+    width: 120px;
+  }
+  .hidden-phone-portrait {
+    display: none !important;
+  }
+}
+
+/* UserStories View - Table Listing of UserStories */
+table#userstories-list {
+  width: 100%;
+}
+table#userstories-list td {
+  padding: 0.5em;
+  vertical-align: middle;
+}
+table#userstories-list td .userstory-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #3a3a3a;
+  cursor: pointer;
+}
+table#userstories-list td.userstory-action {
+  border-left: none;
+}
+
+/* UserStories View - "Add new userstory" input. */
+input#userstory-new-input {
+  width: 100%;
+  border: none;
+  background: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+input#userstory-new-input::-webkit-input-placeholder {
+  font-style: italic;
+}
+input#userstory-new-input:-moz-placeholder {
+  font-style: italic;
+  color: #a9a9a9;
+}
+
+input#input-title {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+textarea#input-text {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
