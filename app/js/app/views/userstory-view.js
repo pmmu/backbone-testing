@@ -13,6 +13,7 @@
         initialize: function () {
             this.listenTo(this.model, "change", this.render);
             this.listenTo(this.model, "destroy", this.remove);
+
             this.render();
         },
 
@@ -21,7 +22,7 @@
             this.$el.html(this.template({
                 title: this.model.get("title"),
                 statement: this.converter.makeHtml(this.model.get("statement")),
-                acceptanceCriteria: this.converter.makeHtml(this.model.get("acceptanceCriteria").join("\n")),
+                acceptanceCriteria: this.converter.makeHtml(this.model.get("acceptanceCriteria").join("<br />")),
                 storyPoints: this.converter.makeHtml(this.model.get("storyPoints"))
             }));
             return this;

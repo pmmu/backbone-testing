@@ -54,6 +54,22 @@ App.Templates["template-userstory"] =
         "  </form>" +
         "</div>";
 
+//each acceptance criteria line item edit view on the user story edit page view
+App.Templates["template-acceptancecriteria-item"] =
+    "<td class=\"acceptancecriteria-name\">" +
+        "  <div class=\"acceptancecriteria-title acceptancecriteria-view\"><%= acceptanceCriteria %></div>" +
+        "</td>" +
+        "<td class=\"acceptancecriteria-action\">" +
+        "  <div class=\"btn-group pull-right\">" +
+        "    <button class=\"btn acceptancecriteria-edit\">" +
+        "      <i class=\"icon-pencil\"></i>" +
+        "    </button>" +
+        "    <button class=\"btn acceptancecriteria-delete\">" +
+        "      <i class=\"icon-trash\"></i>" +
+        "    </button>" +
+        "  </div>" +
+        "</td>";
+
 //view single user story on a page
 App.Templates["template-userstory-view"] =
     "<div class=\"well well-small\">" +
@@ -64,6 +80,4 @@ App.Templates["template-userstory-view"] =
         "<div class=\"label\">Story Points</div>" +
         "<div id=\"pane-storypoints\"><%= storyPoints %></div>" +
         "<div class=\"label\">Acceptance Criteria</div>" +
-        "<table id=\"acceptancecriteria-list\" class=\"table table-bordered table-hover\">" +
-        "  <tbody></tbody>" +
-        "</table>";
+        "<div id=\"pane-acceptancecriteria\"><%= acceptanceCriteria %></div>";

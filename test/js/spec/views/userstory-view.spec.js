@@ -33,7 +33,7 @@ describe("App.Views.UserStoryView", function () {
         var $title = $("#pane-title"),
             $statement = $("#pane-statement"),
             $storyPoints = $("#pane-storypoints"),
-            $acceptanceCriteria = $("#acceptancecriteria-list tbody");
+            $acceptanceCriteria = $("#pane-acceptancecriteria");
 
         // Default to empty title.
         expect($title.text()).to.equal("");
@@ -46,7 +46,7 @@ describe("App.Views.UserStoryView", function () {
         expect($storyPoints.text()).to.equal("?");
 
         // acceptance criteria should have no default message
-        expect($acceptanceCriteria.children("tr").length).to.equal(3);
+        expect($acceptanceCriteria.html()).to.contain("Acceptance Criteria");
     });
 
     it("can render more complicated markdown", function (done) {
@@ -54,7 +54,7 @@ describe("App.Views.UserStoryView", function () {
             var $title = $("#pane-title"),
                 $statement = $("#pane-statement"),
                 $storyPoints = $("#pane-storypoints"),
-                $acceptanceCriteria = $("#acceptancecriteria-list tbody");
+                $acceptanceCriteria = $("#pane-acceptancecriteria");
 
             // Our new (changed) fields.
             expect($title.text()).to.equal("My Title");

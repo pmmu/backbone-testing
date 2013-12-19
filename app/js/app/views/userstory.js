@@ -128,7 +128,7 @@
                 title: this.$("#input-title").val().trim(),
                 statement: this.$("#input-statement").val().trim(),
                 storyPoints: this.$("#input-storypoints").val().trim(),
-                acceptanceCriteria: [""]
+                // acceptanceCriteria: [""]
             });
         }
 
